@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sugu\\source\\repos\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj": {}
+    "C:\\Users\\sugu\\source\\repos\\P2 OOP\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sugu\\source\\repos\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj": {
+    "C:\\Users\\sugu\\source\\repos\\P2 OOP\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sugu\\source\\repos\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj",
+        "projectUniqueName": "C:\\Users\\sugu\\source\\repos\\P2 OOP\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj",
         "projectName": "BulkyBookWeb",
-        "projectPath": "C:\\Users\\sugu\\source\\repos\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj",
+        "projectPath": "C:\\Users\\sugu\\source\\repos\\P2 OOP\\BulkyBookWeb\\BulkyBookWeb\\BulkyBookWeb.csproj",
         "packagesPath": "C:\\Users\\sugu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sugu\\source\\repos\\BulkyBookWeb\\BulkyBookWeb\\obj\\",
+        "outputPath": "C:\\Users\\sugu\\source\\repos\\P2 OOP\\BulkyBookWeb\\BulkyBookWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
