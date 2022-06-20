@@ -3,7 +3,22 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index Category</h1>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+           <h2 class="text-primary">Film list</h2>
+        </div>
+    
+        <div class="col-6 text-end">
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary"> 
+                <i class="bi bi-plus-square"></i> &nbsp; Opret
+
+            </a>
+        </div>
+        </div>
+</div>
+
 
 
 <table class="table table-bordered table-stripped" style="width:100%">
@@ -22,7 +37,7 @@
                 Årstal
             </th>
             <th>
-                ...
+                
             </th>
         </tr>
     </thead>
@@ -43,7 +58,11 @@
                     @obj.Årstal
                 </td>
                 <td width="40%">
-                    .
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i>Rediger</a>
+                        <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i>Slet</a>
+
+                    </div>
                 </td>
             </tr>
         }
