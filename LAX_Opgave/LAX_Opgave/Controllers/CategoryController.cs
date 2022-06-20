@@ -97,7 +97,7 @@ namespace LAX_Opgave.Controllers
             return View(categoryFromDb);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
