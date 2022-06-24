@@ -5,17 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAX_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="900" ResizeMode="NoResize">
-    <Grid >
-        <Label Content="LAX A/S" FontSize="40px" HorizontalAlignment="Center" Margin="0 0 0 370"></Label>
-        <Label Content="FILM TITEL" FontSize="20px" Margin="40 100 750 445"></Label>
-        <TextBox Background="Pink" Width="600" Height="40px" Margin="100 0 0 340"></TextBox>
+        Title="LAX" Height="640" Width="900" ResizeMode="NoResize">
+    <Canvas >
+        <Label Content="LAX A/S"  FontSize="40px" Canvas.Right="350"></Label>
 
-        <Label Content="INSTRUKTØR" FontSize="20px" Margin="40 160"></Label>
-        <TextBox Background="Pink" Width="600" Height="40px" Margin="100 130 0 340"></TextBox>
+        <Label Content="ID" FontSize="20px" Canvas.Left="50" Canvas.Top="116"/>
+        <TextBox x:Name="id_txt" Background="Pink" Height="40px" FontSize="25px" RenderTransformOrigin="-1.044,-2.496" Width="253" Canvas.Top="113" Canvas.Left="200"/>
 
-        <Label Content="Årstal" FontSize="20px" Margin="40 220"></Label>
-        <TextBox Background="Pink" Width="600" Height="40px" Margin="100 130 0 340"></TextBox>
-    </Grid>
+        <Label Content="FILM TITEL" FontSize="20px" Margin="40,112,750,433" Canvas.Left="10" Canvas.Top="68"></Label>
+        <TextBox x:Name="film_txt" Background="Pink" Height="40px" Margin="200,113,450,451" FontSize="25px" RenderTransformOrigin="-1.044,-2.496" Width="253" Canvas.Top="69"/>
+
+        <Label Content="INSTRUKTØR" FontSize="20px" Margin="40,182,718,384" RenderTransformOrigin="0.5,0.5" Canvas.Top="70" Canvas.Left="10">
+
+        </Label>
+        <TextBox x:Name="instruktør_txt" Background="Pink" Height="40px" Margin="200,177,450,387" FontSize="25px" Canvas.Top="67" Width="253"/>
+
+        <Label Content="ÅRSTAL" FontSize="20px" Margin="60,240,770,324" Canvas.Top="-127" RenderTransformOrigin="0.584,1.128" Canvas.Left="435"/>
+        <TextBox x:Name="årstal_txt" Background="Pink" Height="40px" Margin="200,240,450,324" FontSize="25px" Canvas.Left="397" Canvas.Top="-131" Width="256"/>
+
+        <Label Content="DETALJER" FontSize="20px" Margin="60,240,770,324" Canvas.Top="-54" RenderTransformOrigin="0.584,1.128" Canvas.Left="426"/>
+        <TextBox x:Name="detaljer_txt" Background="Pink" Height="40px" Margin="200,240,450,324" FontSize="25px" Canvas.Left="397" Canvas.Top="-55" Width="256"/>
+
+        <Button x:Name="opret_btn" Content="Opret" Width="100px" Height="50px" FontSize="30px" Canvas.Left="40" Canvas.Top="315" Click="opret_btn_Click" ></Button>
+        <Button x:Name="rediger_btn" Content="Rediger" Width="110px" Height="50px" FontSize="30px" Canvas.Left="282" Canvas.Top="315" Click="rediger_btn_Click" />
+        <Button x:Name="slet_btn" Content="Slet" Width="100px" Height="50px" FontSize="30px" Canvas.Left="534" Canvas.Top="315" Click="slet_btn_Click" />
+
+        <DataGrid x:Name="datagrid" Canvas.Left="22" Canvas.Top="398" Height="180" Width="841">
+
+        </DataGrid>
+
+        <Button x:Name="clear_btn" Content="Rydde" Width="100px" Height="50px" FontSize="30px" Canvas.Left="753" Canvas.Top="315" Click="clear_btn_Click" />
+        <Label Content="Brug ID kun for at redigere eller at slette" FontSize="15px" Canvas.Left="196" Canvas.Top="150" Height="32" Width="278"></Label>
+    </Canvas>
 
 </Window>
